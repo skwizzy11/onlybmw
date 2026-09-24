@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ONLY BMW Service — ремонт BMW в Шушарах, Санкт-Петербург</title>
+<meta name="description" content="Ремонт BMW в Шушарах, клубный сервис ONLY BMW: двигатель, ходовая, электрика, дизель, от E32 до G20. 5,0 на Яндексе, 447 оценок. Пн–Пт 10–20.">
+<link rel="canonical" href="https://onlybmwservice.ru/">
+<meta name="theme-color" content="#161819">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="ONLY BMW Service">
+<meta property="og:title" content="ONLY BMW Service — ремонт BMW в Шушарах">
+<meta property="og:description" content="От E32 до G20. Двигатель, ходовая, электрика, дизель. Московское шоссе, 9.">
+<meta property="og:url" content="https://onlybmwservice.ru/">
+<meta property="og:image" content="https://onlybmwservice.ru/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Цех ONLY BMW Service в Шушарах: BMW E39 и механики у подъёмника">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/geologica-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/ceh-e39-podyomnik.jpg" as="image" fetchpriority="high">
+<link rel="stylesheet" href="fonts.css">
+
+<script>document.documentElement.classList.add('has-js')</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "@id": "https://onlybmwservice.ru/#service",
+  "name": "ONLY BMW Service",
+  "alternateName": "Клубный сервис ONLY BMW Organization",
+  "url": "https://onlybmwservice.ru/",
+  "image": "https://onlybmwservice.ru/og.jpg",
+  "logo": "https://onlybmwservice.ru/img/logo.png",
+  "telephone": "+79533451555",
+  "brand": {"@type": "Brand", "name": "BMW"},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Московское шоссе, 9",
+    "addressLocality": "посёлок Шушары",
+    "addressRegion": "Санкт-Петербург",
+    "addressCountry": "RU"
+  },
+  "geo": {"@type": "GeoCoordinates", "latitude": 59.802649, "longitude": 30.399393},
+  "hasMap": "https://yandex.ru/maps/org/only_bmw_service/28068425064/",
+  "areaServed": {"@type": "City", "name": "Санкт-Петербург"},
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "10:00",
+    "closes": "20:00"
+  }],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "ratingCount": "447",
+    "reviewCount": "210"
+  },
+  "paymentAccepted": "Банковская карта",
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Парковка", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true}
+  ],
+  "makesOffer": [
+    {"@type": "Offer", "price": "3500", "priceCurrency": "RUB", "itemOffered": {"@type": "Service", "name": "Техническая диагностика"}},
+    {"@type": "Offer", "price": "2000", "priceCurrency": "RUB", "itemOffered": {"@type": "Service", "name": "Электродиагностика"}},
+    {"@type": "Offer", "price": "1700", "priceCurrency": "RUB", "itemOffered": {"@type": "Service", "name": "Замена масла ДВС"}}
+  ],
+  "sameAs": [
+    "https://vk.com/onlybmwservice",
+    "https://vk.com/onlybmworg",
+    "https://t.me/onlybmwservice",
+    "https://t.me/onlybmworg"
+  ]
+}
+</script>
+
+<style>
+/* Палитра снята с их фото в Шушарах: графит цеха, синий подъёмников и фасада.
+   Синий #345198 — только заливка; для текста осветлённый #9DB5E6 (8,6:1 на фоне). */
+:root {
+  --ink: #161819;        /* фон, цех темнее, чем в кадре #212323 */
+  --surface: #1E2021;
+  --surface-2: #262929;
+  --line: #3C3938;       /* замер, стены цеха */
+  --text: #E4E5DF;       /* 14:1 на фоне */
+  --muted: #A3ADB0;      /* холодный полутон #576469, поднятый по V; 7,8:1 */
+  --blue: #345198;       /* фасад и подъёмники; белый текст на нём 6,8:1 */
+  --blue-deep: #2A4380;
+  --blue-hi: #9DB5E6;
+  --plate: #F2F3EF;
+  --focus: #B4C7EE;
+  --on-accent: #F2F3EF;                        /* текст на синем, 6,9:1 */
+  --accent-edge: #4A67AD;                      /* кромка залитой кнопки */
+  --on-photo: #EDEEE9;                         /* текст поверх фото */
+  --on-photo-muted: #D7D9D3;
+  --line-photo: rgba(228, 229, 223, .55);      /* обводка кнопки поверх фото */
+  --line-photo-soft: rgba(228, 229, 223, .32); /* обводка пилюль */
+  --glass: rgba(22, 24, 25, .25);              /* подложка кнопки поверх фото */
+  --glass-hover: rgba(22, 24, 25, .5);
+  --glass-pill: rgba(22, 24, 25, .55);
+  --header-solid: rgba(22, 24, 25, .96);
+  --shade-text: rgba(0, 0, 0, .35);
+  --shade-text-strong: rgba(0, 0, 0, .55);
+  --scrim-hero:
+    linear-gradient(to bottom, rgba(0,0,0,.6) 0, rgba(0,0,0,0) 150px),
+    linear-gradient(to top, rgba(0,0,0,.66) 0%, rgba(0,0,0,.3) 50%, rgba(0,0,0,.08) 78%),
+    linear-gradient(to right, rgba(0,0,0,.62) 0%, rgba(0,0,0,.4) 42%, rgba(0,0,0,0) 72%);
+  --scrim-quote:
+    linear-gradient(to top, rgba(0,0,0,.78), rgba(0,0,0,.3) 55%, rgba(0,0,0,.05)),
+    linear-gradient(to right, rgba(0,0,0,.45), rgba(0,0,0,0) 65%);
+
+  --f-sans: 'Geologica', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --f-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* четыре кегля, не больше */
+  --t-display: clamp(2.5rem, 6.5vw, 5rem);
+  --t-head: clamp(1.75rem, 3.6vw, 2.75rem);
+  --t-body: 1.0625rem;
+  --t-small: .875rem;
+
+  --gutter: clamp(1rem, 4vw, 3rem);
+  --section: clamp(5rem, 10vw, 8rem);
+  --max: 1240px;
+  --radius: 6px;
+  --ease: cubic-bezier(.2, .7, .2, 1);       /* появление, база промта */
+  --ease-out: cubic-bezier(.23, 1, .32, 1);  /* отклик на действие */
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 76px; color-scheme: dark; }
+a, button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--f-sans);
+  font-size: var(--t-body);
+  line-height: 1.6;
+  font-weight: 350;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+p { margin: 0 0 1em; max-width: 68ch; }
+h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -.02em; }
+h2 { font-size: var(--t-head); line-height: 1.08; text-wrap: balance; }
+h2 + p { margin-top: 1rem; }
+h3 { font-size: var(--t-body); line-height: 1.35; font-weight: 600; letter-spacing: 0; }
+.mono { font-family: var(--f-mono); font-weight: 500; letter-spacing: 0; }
+.muted { color: var(--muted); }
+.small { font-size: var(--t-small); line-height: 1.5; }
+
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+
+.wrap { width: 100%; max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
+.section { padding-block: var(--section); }
+
+.skip {
+  position: absolute; left: 1rem; top: -4rem; z-index: 100;
+  background: var(--plate); color: var(--ink); padding: .75rem 1rem; border-radius: var(--radius);
+  font-weight: 600; text-decoration: none;
+}
+.skip:focus { top: 1rem; }
+
+/* ---------- кнопки ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  min-height: 48px; padding: .75rem 1.35rem;
+  border-radius: var(--radius); border: 1px solid transparent;
+  font: 600 1rem/1.2 var(--f-sans); text-decoration: none; white-space: nowrap;
+  cursor: pointer;
+  transition: background-color .18s ease, border-color .18s ease, transform .16s var(--ease-out);
+}
+.btn:active { transform: scale(.97); }
+.btn-fill { background: var(--blue); color: var(--on-accent); border-color: var(--accent-edge); }
+@media (hover: hover) and (pointer: fine) { .btn-fill:hover { background: var(--blue-deep); } }
+.btn-line { color: var(--text); border-color: var(--line-photo); background: var(--glass); }
+@media (hover: hover) and (pointer: fine) { .btn-line:hover { border-color: var(--text); background: var(--glass-hover); } }
+.btn .mono { font-weight: 600; }
+
+/* ---------- шапка ---------- */
+.site-header {
+  position: fixed; inset: 0 0 auto; z-index: 50; height: 68px;
+  display: flex; align-items: center;
+  transition: background-color .25s var(--ease), border-color .25s var(--ease);
+  border-bottom: 1px solid transparent;
+}
+.site-header.is-solid { background: var(--header-solid); border-bottom-color: var(--line); }
+.site-header .wrap { display: flex; align-items: center; gap: 1.5rem; }
+.logo {
+  display: inline-flex; align-items: center; background: var(--plate);
+  padding: 6px 10px; border-radius: 4px; flex: none;
+}
+.logo img { width: 132px; height: 33px; }
+.nav { display: flex; gap: .25rem; margin-left: auto; }
+.nav a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 .7rem;
+  text-decoration: none; font-size: .95rem; font-weight: 450; color: var(--text); border-radius: 4px;
+}
+@media (hover: hover) and (pointer: fine) { .nav a:hover { color: var(--blue-hi); } }
+.header-tel { min-height: 44px; padding: .5rem 1rem; font-size: .95rem; }
+@media (max-width: 960px) { .nav { display: none; } .header-tel { margin-left: auto; } }
+@media (max-width: 420px) { .header-tel .tel-full { display: none; } }
+@media (min-width: 421px) { .header-tel .tel-short { display: none; } }
+
+/* ---------- герой ---------- */
+.hero {
+  position: relative; min-height: min(92vh, 780px); min-height: min(92svh, 780px);
+  display: flex; align-items: flex-end; isolation: isolate; overflow: hidden;
+}
+.hero-img { position: absolute; inset: 0; z-index: -2; }
+.hero-img img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 55%; }
+.hero::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--scrim-hero);
+}
+.hero .wrap { padding-bottom: clamp(2.5rem, 7vh, 4.5rem); padding-top: 96px; }
+.hero h1 {
+  font-size: var(--t-display); line-height: .98; letter-spacing: -.03em; font-weight: 800;
+  max-width: 11ch; text-shadow: 0 1px 24px var(--shade-text);
+}
+.hero-sub { text-shadow: 0 1px 12px var(--shade-text-strong); margin-top: 1.1rem; max-width: 46ch; font-size: 1.125rem; line-height: 1.5; color: var(--on-photo); font-weight: 400; }
+.pills { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.4rem 0 1.6rem; padding: 0; list-style: none; }
+.pills li {
+  font-size: var(--t-small); line-height: 1; padding: .55rem .8rem;
+  border: 1px solid var(--line-photo-soft); border-radius: 999px;
+  background: var(--glass-pill); color: var(--text);
+}
+.pills .star { color: var(--blue-hi); font-weight: 600; }
+@media (max-width: 420px) { .pills .opt { display: none; } }
+.hero-cta { display: flex; flex-wrap: wrap; gap: .75rem; }
+
+/* ---------- кто мы ---------- */
+.about { padding-block: var(--section) 0; }
+.about-grid { display: grid; grid-template-columns: 7fr 5fr; gap: clamp(2rem, 5vw, 5rem); align-items: end; }
+.about-lead { font-size: clamp(1.25rem, 2.2vw, 1.6rem); line-height: 1.4; font-weight: 400; max-width: 34ch; letter-spacing: -.01em; }
+.about-lead strong { font-weight: 600; }
+.about-facts { margin: 0; display: grid; gap: 1.1rem; }
+.about-facts div { border-top: 1px solid var(--line); padding-top: .8rem; }
+.about-facts dt { font-size: var(--t-small); color: var(--muted); }
+.about-facts dd { margin: .15rem 0 0; font-weight: 500; }
+@media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; } }
+
+/* ---------- сетка кузовов ---------- */
+.index h2 { max-width: 20ch; }
+.index-intro { margin-top: 1rem; color: var(--muted); }
+.chassis {
+  margin: 2.5rem 0 0; padding: 0; list-style: none;
+  display: grid; grid-template-columns: repeat(6, minmax(0, 1fr));
+  border-top: 1px solid var(--line); border-left: 1px solid var(--line);
+}
+.chassis li { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.chassis button {
+  appearance: none; width: 100%; min-height: 44px; aspect-ratio: 16 / 10;
+  display: flex; align-items: flex-end; justify-content: flex-start;
+  padding: .7rem .8rem; border: 0; margin: 0; background: transparent; color: var(--text);
+  font: 600 var(--t-head)/1 var(--f-mono); letter-spacing: -.02em;
+  cursor: pointer; text-align: left;
+  transition: background-color .16s var(--ease), color .16s var(--ease);
+}
+@media (hover: hover) and (pointer: fine) { .chassis button:hover { background: var(--surface-2); } }
+.chassis button[aria-pressed="true"] { background: var(--blue); color: var(--on-accent); }
+.chassis button:focus-visible { outline-offset: -3px; }
+.chassis .gen { font-size: var(--t-small); color: var(--muted); }
+@media (max-width: 860px) { .chassis { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 520px) {
+  .chassis { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .chassis button { aspect-ratio: 4 / 3; font-size: 1.5rem; padding: .55rem .6rem; }
+}
+
+.logbook {
+  display: grid; grid-template-columns: 7rem 1fr; gap: 1.5rem;
+  margin-top: 1.5rem; padding: 1.5rem; background: var(--surface); border-radius: var(--radius);
+  min-height: 9.5rem;
+}
+.logbook-code { font: 600 var(--t-head)/1 var(--f-mono); color: var(--blue-hi); }
+.logbook-text { font-size: 1.125rem; line-height: 1.5; margin: 0 0 .5rem; max-width: 60ch; }
+.logbook-src { margin: 0; }
+.logbook-src a { color: var(--blue-hi); }
+@media (max-width: 520px) { .logbook { grid-template-columns: 1fr; gap: .5rem; padding: 1.1rem; } }
+
+.engines { margin-top: 2.5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .6rem 1.5rem; }
+.engines h3 { color: var(--muted); font-weight: 450; font-size: var(--t-small); width: 100%; }
+.engines ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.engines li { font: 500 1rem/1 var(--f-mono); padding: .6rem .75rem; border: 1px solid var(--line); border-radius: 4px; }
+.also { margin-top: 1.5rem; }
+
+/* ---------- работы ---------- */
+.works-grid { display: grid; grid-template-columns: 8fr 4fr; gap: clamp(2rem, 5vw, 4.5rem); margin-top: 3rem; }
+.units { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.25rem 2.5rem; }
+.unit h3 { padding-bottom: .6rem; border-bottom: 1px solid var(--line); margin-bottom: .75rem; }
+.unit ul { list-style: none; margin: 0; padding: 0; color: var(--muted); }
+.unit li { padding: .2rem 0; }
+.unit li span { color: var(--text); }
+.prices { align-self: start; background: var(--surface); border-radius: var(--radius); padding: 1.75rem 1.5rem; }
+.prices h3 { margin-bottom: 1.25rem; }
+.prices dl { margin: 0; }
+.prices div { padding: 1rem 0; border-top: 1px solid var(--line); }
+.prices dt { color: var(--muted); font-size: var(--t-small); }
+.prices dd { margin: .2rem 0 0; font: 600 var(--t-head)/1.1 var(--f-mono); letter-spacing: -.02em; }
+.prices .rest { margin: 1.25rem 0 0; padding-top: 1rem; border-top: 1px solid var(--line); }
+.works-photo { margin-top: 3rem; display: grid; grid-template-columns: 5fr 7fr; gap: 1rem; align-items: end; }
+.works-photo figure { margin: 0; }
+.works-photo img { border-radius: var(--radius); width: 100%; }
+@media (max-width: 900px) {
+  .works-grid { grid-template-columns: 1fr; }
+  .works-photo { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) { .units { grid-template-columns: 1fr; } }
+
+/* ---------- склад ---------- */
+.stock { background: var(--surface); }
+.stock-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+.stock-photos { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+.stock-photos figure { margin: 0; }
+.stock-photos img { border-radius: var(--radius); width: 100%; height: 100%; object-fit: cover; }
+.stock-photos .tall { grid-row: span 2; }
+.catalog { list-style: none; margin: 2rem 0 0; padding: 0; counter-reset: pos; }
+.catalog li {
+  display: grid; grid-template-columns: 3.25rem 1fr auto; gap: .25rem 1rem; align-items: baseline;
+  padding: 1.1rem 0; border-top: 1px solid var(--line);
+}
+.catalog li:last-child { border-bottom: 1px solid var(--line); }
+.catalog .pos { font: 500 var(--t-small)/1 var(--f-mono); color: var(--muted); }
+.catalog .name { font-weight: 600; }
+.catalog .fits { grid-column: 2; font: 500 .95rem/1.4 var(--f-mono); color: var(--blue-hi); }
+.catalog .status {
+  grid-column: 3; grid-row: 1 / span 2; align-self: center;
+  font-size: var(--t-small); padding: .35rem .6rem; border-radius: 999px;
+  border: 1px solid var(--blue); color: var(--text); white-space: nowrap;
+}
+@media (max-width: 900px) { .stock-grid { grid-template-columns: 1fr; } .stock-photos { order: 2; } }
+@media (max-width: 480px) {
+  .catalog li { grid-template-columns: 2.25rem 1fr; }
+  .catalog .status { grid-column: 2; grid-row: auto; justify-self: start; margin-top: .4rem; }
+}
+
+/* ---------- цитата на фото ---------- */
+.quote-band { position: relative; isolation: isolate; min-height: clamp(420px, 60vw, 700px); display: flex; align-items: flex-end; }
+.quote-band img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.quote-band::after { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--scrim-quote); }
+.quote-band blockquote { margin: 0; padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+.quote-band p { font-size: var(--t-head); line-height: 1.12; font-weight: 700; letter-spacing: -.02em; max-width: 22ch; text-wrap: balance; }
+.quote-band footer { color: var(--on-photo-muted); font-size: var(--t-small); }
+
+/* ---------- отзывы ---------- */
+.reviews-head { display: grid; grid-template-columns: auto 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: end; }
+.score { font: 700 var(--t-display)/.9 var(--f-mono); letter-spacing: -.04em; }
+.score-meta p { margin: 0; }
+.score-meta a { color: var(--blue-hi); }
+.review-list {
+  list-style: none; margin: 3rem 0 0; padding: 0;
+  columns: 2 22rem; column-gap: clamp(1.5rem, 4vw, 3.5rem);
+}
+.review-list li { break-inside: avoid; margin: 0 0 2.5rem; }
+.review-list blockquote { margin: 0; }
+.review-list blockquote p { font-size: 1.125rem; line-height: 1.55; margin-bottom: .75rem; }
+.review-list .who { font-size: var(--t-small); color: var(--muted); }
+.review-list .who b { color: var(--text); font-weight: 600; }
+.review-list .car { font-family: var(--f-mono); color: var(--blue-hi); }
+@media (max-width: 560px) { .reviews-head { grid-template-columns: 1fr; } }
+
+/* ---------- запчасти начистоту ---------- */
+.parts { border-top: 1px solid var(--line); }
+.parts-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(2rem, 5vw, 4.5rem); }
+.parts-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.75rem; }
+.parts-steps li { padding-top: 1.1rem; border-top: 1px solid var(--line); }
+.parts-steps h3 { margin-bottom: .35rem; }
+.parts-steps p { color: var(--muted); margin: 0; }
+.parts-steps q { color: var(--text); quotes: "«" "»"; }
+@media (max-width: 860px) { .parts-grid { grid-template-columns: 1fr; } }
+
+/* ---------- как доехать ---------- */
+.visit { background: var(--surface); }
+.visit-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(2rem, 5vw, 4rem); }
+.visit address { font-style: normal; font-size: 1.25rem; line-height: 1.4; font-weight: 500; margin-top: 1.25rem; }
+.visit address a { color: var(--blue-hi); }
+.hours { margin: 1.75rem 0 0; display: grid; grid-template-columns: auto 1fr; gap: .35rem 1.25rem; }
+.hours dt { color: var(--muted); }
+.hours dd { margin: 0; font-family: var(--f-mono); }
+.amen { list-style: none; margin: 1.75rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.amen li { font-size: var(--t-small); padding: .45rem .7rem; border: 1px solid var(--line); border-radius: 999px; }
+.visit-note { margin-top: 1.5rem; color: var(--muted); }
+.visit-media { display: grid; gap: .75rem; grid-template-columns: 2fr 1fr; grid-template-rows: auto auto; }
+.visit-media .map { grid-column: 1 / -1; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; background: var(--surface-2); position: relative; }
+.visit-media .map iframe { width: 100%; height: 100%; border: 0; display: block; }
+.visit-media figure { margin: 0; }
+figcaption { margin-top: .6rem; font-size: var(--t-small); color: var(--muted); }
+.visit-media img { border-radius: var(--radius); width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 900px) { .visit-grid { grid-template-columns: 1fr; } }
+
+/* ---------- CTA ---------- */
+/* Графит, а не сплошной синий: синий остаётся на кнопке, как на всей странице. */
+.cta { border-top: 1px solid var(--line); }
+.cta .wrap { padding-block: clamp(4rem, 9vw, 7rem); }
+.cta-tel {
+  display: inline-block; margin: 1rem 0 1.75rem; color: var(--text); text-decoration: none;
+  font: 700 var(--t-display)/1 var(--f-mono); letter-spacing: -.04em; white-space: nowrap;
+}
+@media (hover: hover) and (pointer: fine) { .cta-tel:hover { color: var(--blue-hi); } }
+.cta-links { display: flex; flex-wrap: wrap; gap: .75rem; }
+.club { margin-top: 2.5rem; font-size: var(--t-small); color: var(--muted); }
+.club a { color: var(--text); }
+@media (max-width: 600px) { .cta-tel { font-size: min(var(--t-display), 8.4vw); } }
+
+/* ---------- подвал ---------- */
+.site-footer { padding-block: 2.5rem; font-size: var(--t-small); color: var(--muted); }
+.site-footer p { margin: 0 0 .3rem; max-width: none; }
+.site-footer a { color: var(--text); }
+
+/* ---------- появление ---------- */
+.has-js .reveal { opacity: 0; transform: translateY(8px); }
+.reveal.is-in { opacity: 1; transform: none; transition: opacity .5s var(--ease), transform .5s var(--ease); transition-delay: var(--d, 0ms); }
+@media (prefers-reduced-motion: reduce) {
+  .has-js .reveal { opacity: 1; transform: none; }
+  .reveal.is-in { transition: none; }
+  .btn, .chassis button, .site-header { transition: none; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+
+<header class="site-header" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="ONLY BMW Service, наверх">
+      <img src="img/logo.png" width="132" height="33" alt="ONLY BMW Service">
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#kuzova">Кузова</a>
+      <a href="#sklad">Склад</a>
+      <a href="#zapis">Как доехать</a>
+    </nav>
+    <a class="btn btn-fill header-tel" href="tel:+79533451555"><span class="mono tel-full">+7 953 345-15-55</span><span class="tel-short">Позвонить</span></a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-img">
+    <img src="img/ceh-e39-podyomnik.jpg" width="1440" height="1080" alt="Цех ONLY BMW Service в Шушарах: тёмная E39 на переднем плане, за ней механики под машиной на синем подъёмнике" fetchpriority="high">
+  </div>
+  <div class="wrap">
+    <h1 id="hero-title" class="reveal">От E32 до&nbsp;G20. Только BMW.</h1>
+    <p class="hero-sub reveal" style="--d:60ms">Клубный сервис ONLY BMW в&nbsp;Шушарах. Двигатель, ходовая, электрика, дизель. Ходовые позиции держим на&nbsp;складе.</p>
+    <ul class="pills reveal" style="--d:120ms" aria-label="Коротко">
+      <li><span class="star">5,0</span> · 447 оценок на Яндексе</li>
+      <li class="opt">Клубный сервис</li>
+      <li>Шушары, Московское шоссе, 9</li>
+      <li class="opt">Дизельный сервис</li>
+    </ul>
+    <div class="hero-cta reveal" style="--d:180ms">
+      <a class="btn btn-fill" href="#zapis">Записаться</a>
+      <a class="btn btn-line" href="tel:+79533451555"><span class="mono">+7 953 345-15-55</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="about" aria-label="Кто мы">
+  <div class="wrap about-grid">
+    <p class="about-lead">
+      <strong>ONLY BMW Service</strong> — мастерская клуба ONLY BMW Organization. В&nbsp;группе клуба 14&nbsp;043 человека, в&nbsp;2023-м ему исполнилось десять лет. Сервис открылся в&nbsp;марте 2020-го, с&nbsp;осени 2021-го работает в&nbsp;Шушарах.
+    </p>
+    <dl class="about-facts">
+      <div><dt>Первый клиент</dt><dd>E34, проверка подвески, март 2020</dd></div>
+      <div><dt>Новое место</dt><dd>Шушары, открытие 18 сентября 2021</dd></div>
+      <div><dt>Журнал работ</dt><dd>709 записей на стене ВКонтакте</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section index" id="kuzova" aria-labelledby="kuzova-title">
+  <div class="wrap">
+    <h2 id="kuzova-title">Кузова, которые стояли у&nbsp;нас на&nbsp;подъёмнике.</h2>
+    <p class="index-intro">Каждая запись в&nbsp;нашем журнале подписана индексом. Нажмите на&nbsp;кузов, чтобы открыть одну из&nbsp;работ по&nbsp;нему.</p>
+
+    <ul class="chassis" id="chassis" aria-label="Кузова BMW" translate="no">
+      <li class="reveal"><button type="button" data-code="E32">E32</button></li>
+      <li class="reveal"><button type="button" data-code="E34">E34</button></li>
+      <li class="reveal"><button type="button" data-code="E38">E38</button></li>
+      <li class="reveal"><button type="button" data-code="E39" aria-pressed="true">E39</button></li>
+      <li class="reveal"><button type="button" data-code="E46">E46</button></li>
+      <li class="reveal"><button type="button" data-code="E53">E53</button></li>
+      <li class="reveal"><button type="button" data-code="E60">E60</button></li>
+      <li class="reveal"><button type="button" data-code="E70">E70</button></li>
+      <li class="reveal"><button type="button" data-code="E71">E71</button></li>
+      <li class="reveal"><button type="button" data-code="E83">E83</button></li>
+      <li class="reveal"><button type="button" data-code="E87">E87</button></li>
+      <li class="reveal"><button type="button" data-code="E90">E90</button></li>
+      <li class="reveal"><button type="button" data-code="E92">E92</button></li>
+      <li class="reveal"><button type="button" data-code="F10">F10</button></li>
+      <li class="reveal"><button type="button" data-code="F25">F25</button></li>
+      <li class="reveal"><button type="button" data-code="F30">F30</button></li>
+      <li class="reveal"><button type="button" data-code="G11">G11</button></li>
+      <li class="reveal"><button type="button" data-code="G20">G20</button></li>
+    </ul>
+
+    <div class="logbook" aria-live="polite">
+      <div class="logbook-code" id="log-code" translate="no">E39</div>
+      <div>
+        <p class="logbook-text" id="log-text">«E39 после долгого простоя. Замена цепей, прокладки ГБЦ, маслосъёмных колпачков, промывка системы охлаждения.»</p>
+        <p class="logbook-src small muted" id="log-src">Из журнала работ на <a href="https://vk.com/wall-192157325_371" rel="noopener" target="_blank">стене ВКонтакте</a></p>
+      </div>
+    </div>
+
+    <div class="engines">
+      <h3>Моторы из того же журнала</h3>
+      <ul aria-label="Моторы" translate="no">
+        <li>M47</li><li>M54B22</li><li>M54B30</li><li>M57</li><li>N20</li><li>N46B20</li><li>N52</li><li>N62B48</li>
+      </ul>
+    </div>
+    <p class="also small muted">Заезжали и&nbsp;<span class="mono" translate="no">E30, E36, E65, E84, G05, G30</span>.</p>
+  </div>
+</section>
+
+<section class="section works" id="raboty" aria-labelledby="raboty-title">
+  <div class="wrap">
+    <h2 id="raboty-title">Ремонт BMW по&nbsp;узлам.</h2>
+    <div class="works-grid">
+      <div class="units">
+        <div class="unit">
+          <h3>Двигатель</h3>
+          <ul>
+            <li><span>Ремонт ДВС и ГБЦ</span></li>
+            <li>Цепи и ремень ГРМ</li>
+            <li>Маслосъёмные колпачки</li>
+            <li>Переборка ваносов</li>
+            <li>Теплообменник, система охлаждения</li>
+            <li>Топливная система, промывка форсунок</li>
+          </ul>
+        </div>
+        <div class="unit">
+          <h3>Дизель</h3>
+          <ul>
+            <li><span>M47, M57, N47</span></li>
+            <li>Ремонт ГБЦ, замена цепей</li>
+            <li>Свечи накаливания</li>
+            <li>Чистка впускных каналов</li>
+          </ul>
+        </div>
+        <div class="unit">
+          <h3>Ходовая и тормоза</h3>
+          <ul>
+            <li><span>Подвеска, амортизаторы</span></li>
+            <li>Рулевое, рулевые упоры</li>
+            <li>Тормозная система</li>
+            <li>Сцепление</li>
+            <li>Масло в АКПП, раздатке, редукторах</li>
+          </ul>
+        </div>
+        <div class="unit">
+          <h3>Электрика</h3>
+          <ul>
+            <li><span>Компьютерная диагностика</span></li>
+            <li>Автоэлектрик, ремонт проводки</li>
+            <li>Генераторы и стартеры</li>
+            <li>Блоки управления: ABS, зеркала</li>
+            <li>Кондиционер: заправка и ремонт</li>
+            <li>Шиномонтаж</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="prices" aria-labelledby="prices-title">
+        <h3 id="prices-title">Цены, которые можно назвать заранее</h3>
+        <dl>
+          <div><dt>Техническая диагностика</dt><dd>3&nbsp;500&nbsp;₽</dd></div>
+          <div><dt>Электродиагностика</dt><dd>2&nbsp;000&nbsp;₽</dd></div>
+          <div><dt>Замена масла ДВС</dt><dd>1&nbsp;700&nbsp;₽</dd></div>
+        </dl>
+        <p class="rest small muted">Остальное считаем после диагностики.</p>
+      </aside>
+    </div>
+
+    <div class="works-photo">
+      <figure>
+        <img src="img/vanos-cep-m54.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Открытая головка M54: распредвалы, цепь и корпус ваноса">
+      </figure>
+      <figure>
+        <img src="img/mehanik-stupica.jpg" width="1400" height="1050" loading="lazy" decoding="async" alt="Механик ONLY BMW Service работает со ступицей BMW на подъёмнике">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section stock" id="sklad" aria-labelledby="sklad-title">
+  <div class="wrap stock-grid">
+    <div class="stock-photos">
+      <figure class="tall">
+        <img src="img/sklad-vanosy-m54.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="Три перебранных ваноса для мотора M54 на столе">
+      </figure>
+      <figure>
+        <img src="img/sklad-kolca-abs.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Четыре кольца ABS для приводов BMW">
+      </figure>
+      <figure>
+        <img src="img/f25-v-cehu.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Белый BMW X3 F25 в цеху перед заменой рулевого упора">
+      </figure>
+    </div>
+    <div>
+      <h2 id="sklad-title">Всегда на&nbsp;складе.</h2>
+      <p>То, что у&nbsp;баварцев ломается чаще всего, лежит у&nbsp;нас на&nbsp;полке.</p>
+      <ol class="catalog">
+        <li><span class="pos">01</span><span class="name">Ванос, перебранный</span><span class="fits">M54</span><span class="status">в наличии</span></li>
+        <li><span class="pos">02</span><span class="name">Кольцо ABS на привод</span><span class="fits">E90 · E87 · E83</span><span class="status">в наличии</span></li>
+        <li><span class="pos">03</span><span class="name">Ремкомплект плюсового провода</span><span class="fits">E60</span><span class="status">в наличии</span></li>
+        <li><span class="pos">04</span><span class="name">Рулевой упор</span><span class="fits">F25</span><span class="status">в наличии</span></li>
+        <li><span class="pos">05</span><span class="name">Ремкомплект кулисы МКПП, оригинал</span><span class="fits">для вялой кулисы</span><span class="status">в наличии</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="quote-band" aria-label="Из нашего поста">
+  <img src="img/tri-e39.jpg" width="1440" height="1080" loading="lazy" decoding="async" alt="Три серебристые BMW E39 стоят в ряд у ворот сервиса">
+  <div class="wrap">
+    <blockquote>
+      <p>«Приборка БМВ, на&nbsp;которой не&nbsp;горит чеков. Что может быть лучше?»</p>
+    </blockquote>
+  </div>
+</section>
+
+<section class="section reviews" id="otzyvy" aria-labelledby="otzyvy-title">
+  <div class="wrap">
+    <div class="reviews-head">
+      <div class="score" aria-hidden="true">5,0</div>
+      <div class="score-meta">
+        <h2 id="otzyvy-title">447 оценок на&nbsp;Яндексе.</h2>
+        <p class="muted">Средняя 5,0, 210 отзывов, отметка «Хорошее место». <a href="https://yandex.ru/maps/org/only_bmw_service/28068425064/reviews/" rel="noopener" target="_blank">Все отзывы на&nbsp;Яндексе</a></p>
+      </div>
+    </div>
+
+    <ul class="review-list">
+      <li>
+        <blockquote>
+          <p>«Во многих профильных сервисах, не смогли сделать, сказали, что контрактный блок не рабочий. Приехал сюда, по совету соклубников. Никита привязал за 5 минут.»</p>
+          <footer class="who"><b>Альберт Филозов</b>, привязка блока ABS · 30 мая 2026</footer>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote>
+          <p>«Были проблемы с пропусками зажигания единственные кто понял причину и устранили. Уже больше 2 лет с ними и все отлично.»</p>
+          <footer class="who"><b>паша воробьёв</b>, <span class="car">X5 E70</span> · 19 июня 2025</footer>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote>
+          <p>«Эти ребята - оторвались от работы, выслушали, дали рекомендации и даже прокатились со мной. НЕ ВЗЯЛИ НИ КОПЕЙКИ.»</p>
+          <footer class="who"><b>Иван Баканов</b>, <span class="car">E60</span> · 14 июля 2025</footer>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote>
+          <p>«Несмотря на то, что было очень много работ по ДВС, подвеске, СО, электрике , ребята уложились в срок.»</p>
+          <footer class="who"><b>Никита Т.</b>, <span class="car">E39</span> · 26 апреля 2025</footer>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote>
+          <p>«Ремонтировал бмв е87 дизель,замена прокладки гбц и по мелочи,сделали быстро и чётко,проблем не возникало.»</p>
+          <footer class="who"><b>Никита Фомин</b>, <span class="car">E87 дизель</span> · 13 апреля 2025</footer>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote>
+          <p>«Спрашивал у мастеров,что нужно поменять в машине и чаще всего мне говорили,что авто в порядке и менять ничего не нужно.ни в одном сервисе такого вы не услышите)))»</p>
+          <footer class="who"><b>Инкогнито 2020</b>, обслуживается второй год · 10 апреля 2025</footer>
+        </blockquote>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section parts" aria-labelledby="parts-title">
+  <div class="wrap parts-grid">
+    <div>
+      <h2 id="parts-title">Запчасти: что на&nbsp;полке, что под заказ.</h2>
+    </div>
+    <ol class="parts-steps">
+      <li>
+        <h3>Ходовое держим сами</h3>
+        <p>Ваносы M54, кольца ABS, провод E60, упоры F25.</p>
+      </li>
+      <li>
+        <h3>Остальное подбираем и&nbsp;заказываем</h3>
+        <p><q>запчасти нужные подобрали, привезли за 30мин</q></p>
+      </li>
+      <li>
+        <h3>Хотите купить сами? Скажем, что брать</h3>
+        <p><q>Единственный из десятка сервисов, где подтвердили что купить для работы без выламывания цен</q></p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section visit" id="zapis" aria-labelledby="zapis-title">
+  <div class="wrap visit-grid">
+    <div>
+      <h2 id="zapis-title">Как доехать и&nbsp;записаться.</h2>
+      <address>
+        Санкт-Петербург, посёлок Шушары,<br>Московское шоссе, 9<br>
+        <a class="small" href="https://yandex.ru/maps/org/only_bmw_service/28068425064/" rel="noopener" target="_blank">Открыть в&nbsp;Яндекс Картах</a>
+      </address>
+      <dl class="hours">
+        <dt>Пн–Пт</dt><dd>10:00–20:00</dd>
+        <dt>Сб, Вс</dt><dd>закрыто</dd>
+      </dl>
+      <ul class="amen" aria-label="На месте">
+        <li>Парковка</li><li>Wi-Fi</li><li>Оплата картой</li><li>Кофе-автомат</li><li>Зона ожидания</li>
+      </ul>
+      <p class="visit-note">Работаем по&nbsp;предварительной записи. Запись плотная: в&nbsp;отзывах советуют звонить за&nbsp;неделю, а&nbsp;то&nbsp;и&nbsp;две.</p>
+    </div>
+    <div class="visit-media">
+      <div class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=30.399393%2C59.802649&amp;z=15&amp;pt=30.399393%2C59.802649%2Cpm2blm&amp;l=map" title="Карта: ONLY BMW Service, Московское шоссе, 9, Шушары" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <figure>
+        <img src="img/fasad-shushary.jpg" width="1440" height="1080" loading="lazy" decoding="async" alt="Фасад здания с вывеской ONLY BMW CENTER, перед ним BMW X5 и пятая серия">
+        <figcaption>Вывеска ONLY BMW CENTER.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/kot.jpg" width="900" height="675" loading="lazy" decoding="async" alt="Бело-серая кошка сидит у стойки приёмки">
+        <figcaption>Встречает у&nbsp;стойки.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="cta" aria-labelledby="cta-title">
+  <div class="wrap">
+    <h2 id="cta-title">Запись по&nbsp;телефону.</h2>
+    <a class="cta-tel" href="tel:+79533451555">+7 953 345-15-55</a>
+    <div class="cta-links">
+      <a class="btn btn-fill" href="https://t.me/onlybmwservice" rel="noopener" target="_blank">Написать в&nbsp;Telegram</a>
+      <a class="btn btn-line" href="https://wa.me/79533451555" rel="noopener" target="_blank">Написать в&nbsp;WhatsApp</a>
+    </div>
+    <p class="club">Клуб ONLY BMW Organization: <a href="https://vk.com/onlybmworg" rel="noopener" target="_blank">ВКонтакте</a>, <a href="https://t.me/onlybmworg" rel="noopener" target="_blank">Telegram</a>. Журнал работ сервиса: <a href="https://vk.com/onlybmwservice" rel="noopener" target="_blank">vk.com/onlybmwservice</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><a href="tel:+79533451555">+7 953 345-15-55</a> · Шушары, Московское шоссе, 9 · Пн–Пт 10:00–20:00</p>
+    <p>ONLY BMW Service, клубный сервис ONLY BMW Organization.</p>
+    <p>Независимый сервис, не является официальным дилером BMW.</p>
+  </div>
+</footer>
+
+<script>
+/* Появление вешаем первым: если что-то ниже упадёт, контент всё равно покажется. */
+(function () {
+  var els = [].slice.call(document.querySelectorAll('.reveal'));
+  function showAll() { els.forEach(function (el) { el.classList.add('is-in'); }); }
+  var safety = setTimeout(showAll, 2500);
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    clearTimeout(safety); showAll(); return;
+  }
+  try {
+    var io = new IntersectionObserver(function (entries) {
+      /* Первый колбэк приходит сразу после observe: наблюдатель жив, страховка не нужна. */
+      clearTimeout(safety);
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (el) { io.observe(el); });
+  } catch (err) { clearTimeout(safety); showAll(); }
+})();
+
+/* Сетка кузовов проявляется по диагонали: (ряд + колонка) × 25 мс, не дольше 175 мс. */
+try {
+  (function () {
+    var grid = document.getElementById('chassis');
+    var cols = getComputedStyle(grid).gridTemplateColumns.split(' ').length || 6;
+    [].forEach.call(grid.children, function (li, i) {
+      var d = Math.min(((i / cols | 0) + i % cols) * 25, 175);
+      li.style.setProperty('--d', d + 'ms');
+    });
+  })();
+} catch (err) {}
+
+/* Шапка: плотная, как только герой ушёл из-под неё. */
+try {
+  (function () {
+    var header = document.querySelector('.site-header');
+    var hero = document.querySelector('.hero');
+    if (!('IntersectionObserver' in window) || !hero) { header.classList.add('is-solid'); return; }
+    new IntersectionObserver(function (entries) {
+      header.classList.toggle('is-solid', !entries[entries.length - 1].isIntersecting);
+    }, { rootMargin: '-68px 0px 0px 0px', threshold: 0 }).observe(hero);
+  })();
+} catch (err) {}
+
+/* Журнал по кузовам: тексты взяты из их постов ВКонтакте и отзывов на Яндексе. */
+try {
+  (function () {
+    var VK = 'https://vk.com/wall-192157325_';
+    var log = {
+      E32: ['«Решение вопросов по электрике. E32.»', VK + '372'],
+      E34: ['«Первый день. Первый клиент. BMW E34. Проверка технического состояния подвески.» Март 2020 года.', VK + '19'],
+      E38: ['«Приехала к нам на днях из Великого Новгорода хорошая E38. С проблемами по электрике.»', VK + '300'],
+      E39: ['«E39 после долгого простоя. Замена цепей, прокладки ГБЦ, маслосъёмных колпачков, промывка системы охлаждения.»', VK + '371'],
+      E46: ['«Приезжал редкий зверь. E46 coupe, M54B30 на компрессоре. Автомобиль оказался с характером.»', VK + '109'],
+      E53: ['«Установка двигателя N62B48 после кап. ремонта, коробки и рулевой рейки в E53.»', VK + '417'],
+      E60: ['«E60 M54B30. Замена маслосъёмных колпачков и переборка ваносов.»', VK + '602'],
+      E70: ['«Были проблемы с пропусками зажигания единственные кто понял причину и устранили.»', null, 'Отзыв владельца X5 E70 на Яндексе'],
+      E71: ['«E71. Ремонт блока стояночного тормоза EMF.»', VK + '1801'],
+      E83: ['«E83. Замена гребёнок ABS и датчика ABS. Довольный клиент и рабочая система.»', VK + '1582'],
+      E87: ['«Замена цепи и маслосъёмных колпачков на E87 N46B20.»', VK + '333'],
+      E90: ['«E90 дизель M47. Ремонт ГБЦ, замена цепей, замена теплообменника, топливного фильтра, ремонт проводки.»', VK + '1461'],
+      E92: ['«E92. Установка МКПП вместо АКПП.»', VK + '1485'],
+      F10: ['«F10. Замена передних амортизаторов, сайлентблока заднего редуктора, переднего поперечного рычага.»', VK + '2044'],
+      F25: ['«Одна из постоянных проблем F25. Замена рулевого упора. У нас они всегда в наличии.»', VK + '2258'],
+      F30: ['«F30. Подготовка к летнему сезону: мойка радиаторов, замена масла, фильтров, антифриза, кодировка.»', VK + '1646'],
+      G11: ['«G11. Замена масла АКПП, в раздатке, в переднем и заднем редукторах.»', VK + '2235'],
+      G20: ['«Частая проблема G20: выход из строя блока управления зеркалом.»', VK + '2242']
+    };
+    var grid = document.getElementById('chassis');
+    var code = document.getElementById('log-code');
+    var text = document.getElementById('log-text');
+    var src = document.getElementById('log-src');
+    var entry = text.parentNode;
+    var calm = matchMedia('(prefers-reduced-motion: reduce)');
+    grid.querySelectorAll('button').forEach(function (b) {
+      if (!b.hasAttribute('aria-pressed')) b.setAttribute('aria-pressed', 'false');
+    });
+    function pick(btn, fromUser) {
+      var k = btn.dataset.code, item = log[k];
+      if (!item) return;
+      if (fromUser && history.replaceState) {
+        var u = new URL(location.href); u.searchParams.set('kuzov', k);
+        history.replaceState(null, '', u.pathname + u.search + u.hash);
+      }
+      grid.querySelectorAll('button[aria-pressed="true"]').forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+      btn.setAttribute('aria-pressed', 'true');
+      if (entry.animate) {
+        entry.animate(calm.matches
+          ? [{ opacity: .5 }, { opacity: 1 }]
+          : [{ opacity: .35, filter: 'blur(2px)' }, { opacity: 1, filter: 'blur(0)' }],
+          { duration: calm.matches ? 120 : 180, easing: 'cubic-bezier(.23, 1, .32, 1)' });
+      }
+      code.textContent = k;
+      text.textContent = item[0];
+      if (item[1]) {
+        src.innerHTML = 'Из журнала работ на <a href="' + item[1] + '" rel="noopener" target="_blank">стене ВКонтакте</a>';
+      } else {
+        src.innerHTML = item[2] + ', <a href="https://yandex.ru/maps/org/only_bmw_service/28068425064/reviews/" rel="noopener" target="_blank">читать</a>';
+      }
+    }
+    grid.addEventListener('click', function (e) {
+      var btn = e.target.closest('button[data-code]');
+      if (btn) pick(btn, true);
+    });
+    var want = new URLSearchParams(location.search).get('kuzov');
+    var start = want && grid.querySelector('button[data-code="' + want.toUpperCase().replace(/[^A-Z0-9]/g, '') + '"]');
+    if (start) pick(start, false);
+  })();
+} catch (err) {}
+</script>
+</body>
+</html>
