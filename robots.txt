@@ -1,4 +1,4 @@
+# DEPLOY: демо на github.io закрыто от поиска.
+# На домене клиента: Allow: / и строка Sitemap: https://onlybmwservice.ru/sitemap.xml
 User-agent: *
-Allow: /
-
-Sitemap: https://onlybmwservice.ru/sitemap.xml
+Disallow: /
